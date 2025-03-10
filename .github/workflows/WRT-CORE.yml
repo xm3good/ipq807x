@@ -150,6 +150,7 @@ jobs:
           cd ./wrt/
 
           ./scripts/feeds update -a
+          git clone --depth 1 https://github.com/sbwml/luci-app-alist package/alist
           ./scripts/feeds install -a
 
       - name: Custom Packages
